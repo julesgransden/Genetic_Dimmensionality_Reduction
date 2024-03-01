@@ -20,6 +20,18 @@ A Genetic Algorithm is a heuristic search algorithm inspired by the process of n
 
 7. **Termination**: Repeat steps 2-6 until a termination condition is met, such as a maximum number of generations or satisfactory fitness level achieved.
 
+## Results
+In a spam email detection dataset containing 6000 data points, I utilized the power of Genetic feature selection to increase the accuracy of my model. 
+To prepare the data for the genetic algorithm, I performed a vector embedding of my text data using openAI's embedding API, which turns each email into a vector of 1536 features. 
+Without any feature selection, my decision tree algorithm attained 95% accuracy. After the application of my genetic algorithm for dimension reduction, I managed to increase my performance to 98%. It is not a significant increase, but it still shows that the algorithm performs as it should. 
+
+<img width="987" alt="Screen Shot 2024-02-29 at 3 02 23 PM" src="https://github.com/julesgransden/Genetic_Dimmensionality_Reduction/assets/78057184/3afb9d8f-774d-49e7-a013-86dc4568eb8c">
+Figure 1: Accuracy after 100 iterations using a multiple-point crossover function, 1% mutation factor
+<img width="993" alt="Screen Shot 2024-02-28 at 5 41 30 PM" src="https://github.com/julesgransden/Genetic_Dimmensionality_Reduction/assets/78057184/9e889c2c-e10d-4885-8c96-d29f3ec094c9">
+Figure 2: Accuracy after 10 iterations of the single-point crossover function, 1% mutation factor
+
+
+
 ## Usage
 
 To use this Genetic Algorithm, follow these steps:
